@@ -1,0 +1,14 @@
+<h1>{{ event.title }}</h1>
+<p>{{ event.description }}</p>
+<p>Date: {{ event.date }}</p>
+<p>Location: {{ event.location }}</p>
+
+{% if form.errors %}
+  <p class="error">Please correct the errors below.</p>
+{% endif %}
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Register</button>
+</form>

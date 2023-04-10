@@ -1,0 +1,83 @@
+/* Overall container style */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Label style */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Input and select style */
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  /* Textarea style */
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 150px;
+  }
+  
+  /* Submit button style */
+  button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Submit button hover style */
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Grid layout style */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .col-25 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .col-75 {
+    flex: 75%;
+    max-width: 75%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 600px) {
+    .row {
+      display: block;
+    }
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
